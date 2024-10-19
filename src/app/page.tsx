@@ -12,7 +12,7 @@ export default function Home() {
   useEffect(()=>{
     if(!fUE.current) {
       fUE.current = true;
-      fetch(`http://localhost:3000/api/dinosaurs`)
+      fetch(`/api/dinosaurs`)
       .then(res => res.json())
       .then(data => {
         setDinoData(data);

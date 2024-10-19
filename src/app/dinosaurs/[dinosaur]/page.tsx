@@ -13,7 +13,7 @@ export default function DinosaurDetail(context: { params: { dinosaur: string } }
   useEffect(() => {
     (async () => {
       try {
-        const res = await fetch(`http://localhost:3000/api/dinosaurs/${context.params.dinosaur}`);
+        const res = await fetch(`/api/dinosaurs/${context.params.dinosaur}`);
         if (!res.ok) {
           setError(true);
           return;
