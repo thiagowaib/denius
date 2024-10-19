@@ -1,15 +1,15 @@
 # Denius 🦖
 
-**Denius** é uma página interativa e divertida feita em **Next.js**, onde você pode acessar curiosidades sobre dinossauros. Explore informações detalhadas sobre várias espécies de dinossauros, com descrições e curiosidades interessantes. 
+**Denius** is an interactive and fun page built with **Next.js** where you can explore fascinating facts about dinosaurs. Discover detailed information about various dinosaur species, with engaging descriptions and interesting trivia.
 
-## Funcionalidades
+## Features
 
-- 🦕 **Navegação intuitiva:** Utilize o carrossel para selecionar diferentes dinossauros.
-- 📖 **Informações detalhadas:** Cada dinossauro possui uma página dedicada com descrição e curiosidades.
-- 🔎 **Filtragem rápida:** A interface foi projetada para ser ágil e responsiva, proporcionando uma experiência agradável na descoberta de novas espécies.
+- 🦕 **Intuitive navigation:** Use the carousel to browse through different dinosaurs.
+- 📖 **Detailed information:** Each dinosaur has a dedicated page with descriptions and fun facts.
+- 🔎 **Quick filtering:** The interface is designed to be fast and responsive, providing a smooth experience when discovering new species.
 
-## Objetivo
+## Objective
 
-O projeto foi criado para explorar a integração de **React Suspense**, **Lazy Loading** e a arquitetura de páginas dinâmicas do **Next.js**, oferecendo uma experiência fluida e interativa ao usuário.
+The project was created to explore the integration of **React Suspense**, **Lazy Loading**, and dynamic page architecture in **Next.js**, offering a fluid and interactive user experience.
 
-Seja bem-vindo ao mundo pré-histórico do **Denius**! 🦕
+Welcome to the prehistoric world of **Denius**! 🦕
