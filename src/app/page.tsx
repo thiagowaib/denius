@@ -10,7 +10,8 @@ export default function Home() {
   const fUE = useRef(false);
 
   useEffect(()=>{
-    if(!fUE.current && (fUE.current = true)) {
+    if(!fUE.current) {
+      fUE.current = true;
       fetch(`http://localhost:3000/api/dinosaurs`)
       .then(res => res.json())
       .then(data => {
