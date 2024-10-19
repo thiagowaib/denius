@@ -1,5 +1,5 @@
 'use client';
-import { lazy, useEffect, useState } from "react";
+import { lazy, useEffect, useRef, useState } from "react";
 import Loading from "./_components/Loading";
 import { IDino } from "../interfaces/IDino";
 
@@ -7,10 +7,10 @@ const DinosaurCarrosel = lazy(() => import('./_components/DinosaurCarrosel'))
 export default function Home() {
   const [isLoading, setLoading] = useState<boolean>(true);
   const [dinoData, setDinoData] = useState<IDino[]>();
-  let fUE = false
+  const fUE = useRef(false);
 
   useEffect(()=>{
-    if(!fUE && (fUE = true)) {
+    if(!fUE.current && (fUE.current = true)) {
       fetch(`http://localhost:3000/api/dinosaurs`)
       .then(res => res.json())
       .then(data => {

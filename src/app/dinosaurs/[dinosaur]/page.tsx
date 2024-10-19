@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { IDino } from "../../../interfaces/IDino";
-import { notFound } from "next/navigation";
 import Link from "next/link";
 import Loading from "../../_components/Loading";
 
@@ -22,6 +21,7 @@ export default function DinosaurDetail(context: { params: { dinosaur: string } }
         const details = await res.json() as IDino;
         setDino(details);
       } catch (err) {
+        console.error(err)
         setError(true);
       } finally {
         setLoading(false); // Finaliza o carregamento
@@ -38,9 +38,9 @@ export default function DinosaurDetail(context: { params: { dinosaur: string } }
         <>
             <h1 className="italic md:text-4xl text-center font-serif font-bold">~ {dino.name} ~</h1>
             <p className="italic md:text-2xl mt-2 text-center">
-            <span className="md:text-4xl text-2xl mr-1 italic">"</span>
+            <span className="md:text-4xl text-2xl mr-1 italic">&quot;</span>
             {dino.description.replace(/\"/gi, "`")}
-            <span className="md:text-4xl text-2xl ml-1 italic">"</span>
+            <span className="md:text-4xl text-2xl ml-1 italic">&quot;</span>
             </p>
         </>
         }
